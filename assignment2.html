@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "EB Garamond", sans-serif;
+}
+
+body {
+  background: #f5f7f6;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #2e7d32;
+  color: white;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  gap: 30px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero-text button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.hero-img {
+  flex: 1;
+}
+
+img:hover{
+    transform: translateY(-3    px);
+    
+}
+
+.hero-img img {
+  width: 100%;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+
+/* Amenities */
+.amenities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  gap:5px;
+}
+
+.gallery img {
+  width: 25%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Footer */
+.footer {
+  background: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+    </style>
+  <meta charset="UTF-8">
+  <title>GreenView Farmhouse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1 class="logo">GreenView Farmhouse</h1>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#">Amenities</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Relax. Reconnect. Rejuvenate.</h2>
+      <p>Experience nature with modern comfort.</p>
+      <button>Book Now</button>
+    </div>
+    <div class="hero-img">
+      <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" alt="Farmhouse">
+    </div>
+  </section>
+
+  <!-- Amenities -->
+  <section class="amenities">
+    <div class="card">🌳 Large Lawn</div>
+    <div class="card">🏊 Swimming Pool</div>
+    <div class="card">🔥 Bonfire</div>
+    <div class="card">🍽️ Outdoor Dining</div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery">
+    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="" />
+    <img src="data:image/jpeg;base64,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" />
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" />
+    <img src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c" />
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 GreenView Farmhouse. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
